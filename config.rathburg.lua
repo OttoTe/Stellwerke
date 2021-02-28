@@ -12,10 +12,10 @@ speichereFahrstrassen = false
 
 -- Richtung: r = nach rechts, l = nach links
 signale = {
-["V-LpNrf"]	= {x = 50, y = 3, richtung = "r",
+["vLp"]	= {x = 50, y = 3, richtung = "r",
 		za = {pc = "S1", au = "right", fb = 00},
 		},
-["LpNrf"]	= {x = 66, y = 3, richtung = "r",
+["nNrf"]	= {x = 66, y = 3, richtung = "r",
 		stelle_za = {pc = "S1", au = "right", fb = 01},
 	 	},
 }
@@ -26,17 +26,19 @@ fsAufloeser = {
 bahnuebergaenge = {
 }
 gleise = {
+["W1/2I"]    = {x = 34, y = 05, pc = "S1", au = "right",   fb = 02, text = "---------"},
 }
 weichen = {
+["W1/2"]   = {pc = "S1", au = "right", fb = 03},
 }
 fahrstrassenteile = {
-["LP-NRF"]    = {x = 52, y = 3, text = "--------------"},
+["vLpnNrf"]    = {x = 52, y = 3, text = "--------------"},
 }
 fahrstrassen = {
-	["V-LpNrf.LpNrf"] = {
-		fsTeile = {"LP-NRF"},
+	["vLp.nNrf"] = {
+		fsTeile = {"vLpnNrf"},
         signale = {
-            ["LpNrf"] = SIGNAL_ZA,
+            ["nNrf"] = SIGNAL_ZA,
         },
     },
 }
