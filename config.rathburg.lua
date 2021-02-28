@@ -1,6 +1,7 @@
 local SIGNAL_HP = "hp"
 local SIGNAL_SH = "sh"
 local SIGNAL_ERS = "ers"
+local SIGNAL_ZA = "za"
 
 gleisbildDatei = "gleisbild.txt"
 stellwerkName = "Rathburg"
